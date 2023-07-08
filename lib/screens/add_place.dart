@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_element
 
 import 'package:favorite_places_app/providers/user_places.dart';
+import 'package:favorite_places_app/widgets/image_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -47,6 +48,10 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
               style:
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
             ),
+            SizedBox(
+              height: 10,
+            ),
+            ImageInput(),
             SizedBox(
               height: 16,
             ),
