@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:favorite_places_app/screens/add_place.dart';
 import 'package:favorite_places_app/widgets/places_list.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +19,13 @@ class _PlacesScreenState extends State<PlacesScreen> {
         title: const Text("Your Places"),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => AddPlaceScreen(),
+                ),
+              );
+            },
             icon: const Icon(Icons.add),
           )
         ],
