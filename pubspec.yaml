@@ -44,6 +44,7 @@ dependencies:
         url: https://github.com/781flyingdutchman/flutterlocation.git
         ref: 'V4'
         path: packages/location
+  permission_handler: ^11.0.0
 
 dev_dependencies:
   flutter_test:
